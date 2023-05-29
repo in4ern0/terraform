@@ -1,7 +1,7 @@
 /*
 Name: IaC Buildout for Terraform Associate Exam
 Description: AWS Infrastructure Buildout
-Contributors: Bryan and Gabe
+Contributors: Inferno
 */
 
 # Configure the AWS Provider
