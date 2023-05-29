@@ -19,7 +19,7 @@ terraform state show device_name
 /*
 Name: IaC Buildout for Terraform Associate Exam
 Description: AWS Infrastructure Buildout
-Contributors: Bryan and Gabe
+Contributors: inferno
 */
 required_version = "~>=0.15.0"   ~ it means if last 0 changes will be valide version .15.{0}
 
