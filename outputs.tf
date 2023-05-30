@@ -1,3 +1,5 @@
+/*
+*/
 output "hello-world" {
   description = "Print a Hello World text output"
   value       = "Hello World"
@@ -13,5 +15,13 @@ output "public_url" {
 }
 output "vpc_information" {
   description = "VPC Information about Environment"
-  value = "Your ${aws_vpc.vpc.tags.Environment} VPC has an ID of ${aws_vpc.vpc.id}"
+  value       = "Your ${aws_vpc.vpc.tags.Environment} VPC has an ID of ${aws_vpc.vpc.id}"
 }
+
+/*
+output "aws_key_pair" {
+  description = "Imported Local key pair name"
+  value       = "Your key pair name is  ${tls_private_key.generated.private_key_pem}"
+  sensitive = true
+}
+*/
