@@ -9,7 +9,7 @@ provider "aws" {
   region = "us-east-1"
   default_tags {
     tags = {
-      Environment = terraform.workspace # define default workspace tags
+      Environment = terraform.workspace # to define default workspace tags
     }
   }
 }
