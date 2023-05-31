@@ -1,0 +1,69 @@
+terraform validate main.tf 
+terraform fmt 
+terraform plan 
+terraform -h plan 
+terraform apply 
+terraform show - Show New State
+terraform destroy -auto-approve
+terraform plan -out myplan    - will save the plan name is "myplan"
+terraform output
+terraform output -json
+terraform state list 
+terraform state show device_name
+terraform init -upgrade --> to validate you pull down the provider versions specified in the
+                            configuration and validate with a terraform version or a terraform providers command.
+terraform taint aws_instance.web_server - We can the force the resource to be destroyed and recreated with the taint command (DEPRECATED)
+terraform untaint aws_instance.web_server 
+terraform state show aws_instance.web_server - to check web_server state
+terraform apply -replace="aws_instance.web_server" - We can the force the resource to be destroyed and recreated
+terraform import
+terraform workspace - check options
+terraform workspace -help
+terraform workspace new development - Created and switched to workspace "development"!
+terraform workspace select default - Switched to workspace "default".
+terraform workspace delete development - Deleted workspace "development"!
+Subcommands:
+    delete    Delete a workspace
+    list      List Workspaces
+    new       Create a new workspace
+    select    Select a workspace
+    show      Show the name of the current workspace
+
+
+export TF_LOG=TRACE -- You can set TF_LOG to one of the log levels TRACE, DEBUG, INFO, WARN or ERROR to change the
+verbosity of the logs, with TRACE being the most verbose.
+
+export TF_LOG_PATH="terraform_log.txt" -- Open the terraform_log.txt to see the contents of the debug trace for your terraform init. Experiment with removing the provider stanza within your Terraform configuration
+$env:TF_LOG_PATH="terraform_log.txt" - Poweshell
+
+
+
+#Comment or //Comment
+/*
+Name: IaC Buildout for Terraform Associate Exam
+Description: AWS Infrastructure Buildout
+Contributors: Bryan and Gabe
+*/
+required_version = "~>=0.15.0"   ~ it means if last 0 changes will be valide version .15.{0}
+
+main.tf  
+terraform.tf  
+variables.tf 
+outputs.tf
+
+Terraform Code Configuration block types include:
+• Terraform Settings Block
+• Terraform Provider Block
+• Terraform Resource Block
+• Terraform Data Block
+• Terraform Input Variables Block
+• Terraform Local Variables Block
+• Terraform Output Values Block
+• Terraform Modules Block
+
+
+
+
+terraform init - after init command its create  .terraform/providers/registry.terraform.io and .terraform.lock.hcl --> state file
+
+
