@@ -1,4 +1,4 @@
-terraform init
-terraform plan
-terraform show
+terraform init - initialize (to install providers) 
+terraform plan - 
+terraform show - see resource details
 terraform apply
